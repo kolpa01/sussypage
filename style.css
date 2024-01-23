@@ -1,0 +1,37 @@
+body {
+    background-color: red;
+}
+
+h1 {
+    font-family: Papyrus;
+    color: aqua;
+    font-size: 50px;
+}
+
+.zol {
+    height: 322px;
+    width: 280px;
+}
+
+.zol:hover {
+    height: 322px;
+    width: 760px;
+    padding-left: 500px;
+    rotate: 360deg;
+    transition: 10s;
+}
+
+
+.scm {
+    color: #000;
+    font-family: "Comic Sans MS";
+    padding-top: 30px;
+    padding-left: 20px;
+    background-color: aqua;
+    height: 125px;
+    width: 400px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 30px;
+    border-width: 10px;
+}
