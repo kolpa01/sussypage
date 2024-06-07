@@ -15,10 +15,9 @@ ul.topnav {
   padding: 0;
   overflow: hidden;
   background-color: #0a0a12;
-  position: fixed;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
   top: 0;
-  width: 100%;
-  height: 46px;
 }
 
 ul.topnav li {
