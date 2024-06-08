@@ -1,5 +1,69 @@
 body {
-    background-color: red;
+    background-color: #111220;
+    color: #fff;
+    font-family: helvetica;
+    margin: 0;
+}
+
+ul.topnav {
+    z-index: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aqua;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-bottom: solid #000;
+    border-radius: 10px;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #7d7d7d;
+    border-radius: 10px;
+}
+
+ul.topnav li a.active {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+ul.topnav li a.active:hover {
+    background-color: #3e3e3e;
+    color: white;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 672px) {
+
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+
+    ul.topnav {
+        position: relative;
+    }
+}
+
+.tsxt {
+    margin-left: 10px;
 }
 
 h1 {
@@ -8,9 +72,16 @@ h1 {
     font-size: 50px;
 }
 
+.realpage {
+    font-family: Papyrus;
+    color: aqua;
+    font-size: 32px;
+}
+
 .zol {
     height: 322px;
     width: 280px;
+    transition: 5s;
 }
 
 .zol:hover {
@@ -19,6 +90,22 @@ h1 {
     padding-left: 500px;
     rotate: 360deg;
     transition: 10s;
+    z-index: 999;
+}
+
+.zol2 {
+    height: 322px;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.zol2:hover {
+    height: 322px;
+    width: 760px;
+    padding-left: 500px;
+    rotate: 360deg;
+    transition: 360s;
+    position: relative;
 }
 
 
@@ -34,4 +121,32 @@ h1 {
     border-color: white;
     border-radius: 30px;
     border-width: 10px;
+}
+
+.scm2 {
+    color: #000;
+    font-family: "Comic Sans MS";
+    padding-top: 15px;
+    padding-left: 20px;
+    background-color: lime;
+    height: 150px;
+    width: 400px;
+    border-style: solid;
+    border-color: yellow;
+    border-radius: 10px;
+    border-width: 10px;
+}
+
+.rotate {
+    animation: rotation 0.1s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }
