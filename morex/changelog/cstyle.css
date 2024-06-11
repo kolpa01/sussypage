@@ -1,5 +1,39 @@
 table, th, td {
   border:1px solid black;
+  margin-left: 10px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  border: #ff38a9 10px solid;
+  border-radius: 10px;
+  background-color: #ff38a9;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  border: #621887 10px solid;
+  border-radius: 10px;
+  background-color: #621887;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  border: #29252f 10px solid;
+  border-radius: 10px;
+  background-color: #29252f;
+  text-decoration: none;
+}
+
+p {
+  margin-left: 10px;
 }
 
 body {
@@ -50,6 +84,18 @@ ul.topnav li.right {
   float: right;
 }
 
+.tsxt {
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: black;
+  border-radius: 10px;
+  border-bottom: black 10px solid;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 56vw;
+}
+
+
 @media screen and (max-width: 672px) {
   ul.topnav li.right,
   ul.topnav li {
@@ -58,8 +104,18 @@ ul.topnav li.right {
   ul.topnav {
     position: relative;
   }
+  .tsxt {
+    width: 90vw;
+  }
 }
 
-.tsxt {
-  margin-left: 10px;
+@media screen and (max-width: 1000px) {
+  .tsxt {
+    width: 90vw;
+  }
+}
+
+.cialo {
+  display: flex;
+  justify-content: center;
 }
