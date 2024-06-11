@@ -51,6 +51,12 @@ ul.topnav li.right {
     float: right;
 }
 
+#morexspin {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 #tst {
     display: flex;
     flex-wrap: wrap;
