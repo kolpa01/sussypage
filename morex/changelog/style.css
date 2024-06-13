@@ -51,6 +51,7 @@ ul.topnav li.right {
     float: right;
 }
 
+
 #morexspin {
     display: flex;
     justify-content: center;
@@ -75,8 +76,9 @@ ul.topnav li.right {
     padding: 0;
 }
 
-#chabox:hover {
+#chabox a:hover:not(.disabled) {
     background-color: #ff38a9;
+    border-radius: 10px;
 }
 
 #chabox a {
@@ -139,4 +141,14 @@ ul.topnav li.right {
 .cialo {
     display: flex;
     justify-content: center;
+}
+
+.disabled {
+    background-color: #3b3141;
+    border-radius: 10px;
+    user-select: none; 
+}
+
+.disabled a:hover {
+    background-color: #3b3141;
 }
