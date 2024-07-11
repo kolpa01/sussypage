@@ -34,6 +34,7 @@ h3 {
 
 p {
   margin-left: 10px;
+  margin-right: 10px;
 }
 
 body {
@@ -93,6 +94,26 @@ ul.topnav li.right {
   margin-bottom: 20px;
   margin-top: 20px;
   width: 56vw;
+}
+
+.tsxt a {
+  color: #ff38a9;
+}
+
+.tsxt a:link {
+  color: #ff38a9;
+}
+
+.tsxt a:visited {
+  color: #ff38a9;
+}
+
+.tsxt a:hover {
+  color: #621887;
+}
+
+.tsxt a:active {
+  color: #ff38a9;
 }
 
 

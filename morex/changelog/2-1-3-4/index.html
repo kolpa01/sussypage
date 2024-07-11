@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Changelog do wersji 2.1.3.4" />
+    <link rel="icon" type="image/x-icon" href="/sussypage/morex/favicon.png" />
+    <link rel="stylesheet" href="/morex/changelog/cstyle.css">
+    <title>Morex 2.1.3.4</title>
+</head>
+<body>
+    <ul class="topnav">
+      <li><a href="https://kolpa01.github.io/sussypage/">Strona Główna</a></li>
+      <li><a href="https://kolpa01.github.io/sussypage/morex">Morex</a></li>
+      <li><a class="active" href="https://kolpa01.github.io/sussypage/morex/changelog">Changelogi</a></li>
+      <li><a href="https://kolpa01.github.io/sussypage/refunds">Kalkulator Zwrotów</a></li>
+      <li class="right"><a href="https://youtube.com/@kolpa01">Youtube</a></li>
+      <li class="right"><a href="https://discord.gg/xJv9qcnfjq">Discord</a></li>
+    </ul>
+    <div class="cialo">
+    <div class="tsxt">
+    <h1>Changelog 2.1.3.4</h1>
+    <h2>System Walki</h2>
+    <h3>Sakwa</h3>
+    <p>Do systemu walki została dodana sakwa, która umożliwia używanie przedmiotów w walce. Posiada ona 4 sloty, które można wypełnić do 6 przedmiotów na slot. Można użyć maksymalnie 9 przedmiotów w trakcie jednej walki.</p>
+    <p>Dostępne przedmioty<br>
+     Kryształ - Dodaje 45SH graczowi<br>
+     Piwo - Zabiera graczowi 45HP<br>
+     Zegarek - Umożliwia wykonanie dwóch ruchów pod rząd<br>
+     Mikstura Życia - Regeneruje 45HP<br></p>
+    <h3>Zapis Walki</h3>
+    <p>Od teraz można zapisać i wczytać walki z Własnymi wrogami</p>
+    <h3>Nagrody po skończeniu walki</h3>
+    <p>Sposób zdobywania nagród po ukończeniu walki został znormalizowany. Dzięki temu można zdobywać więcej rodzaji przedmiotów po ukończeniu walki</p>
+    <h3>Informacje</h3>
+    <p>Lekko zmieniono informacje w trakcie walki.</p>
+    <h2>Dodano komendy</h2>
+    <h3>/equipment bundle equip</h3>
+    <p>Pozwala wyposażyć przedmioty na dany slot sakwy.</p>
+    <h3>/equipment bundle unequip</h3>
+    <p>Pozwala usunąć przedmioty z danego slotu sakwy.</p>
+    <h3>/set default hunt</h3>
+    <p>Pozwala ustawić domyślną lokalizację do polowania na /hunt</p>
+    <h3>/custommobs create</h3>
+    <p>Pozwala utworzyć Własnego wroga, jeśli gracz nie przekroczył limitu wrogów (domyślny to 3, można go zwiększyć zdobywając poziom). Wyświetla formularz z pięcioma polami do wypełnienia, które są potrzebne do utworzenia wroga.<br>
+    SID - ciąg znaków do zidentyfikowania wroga, zazwyczaj angielska nazwa z małych liter (3-32 znaków) <br>
+    Nazwa wyświetlana - nazwa wroga, która jest wyświetlana podczas walki (3-32 znaków)<br>
+    Wartości ataków - trzy liczby dodatnie odzielone przecinkami, przykładowo 10,20,30 (1-19 znaków)<br>
+    HP - liczba punktów życia jakie wróg posiada, maksymalnie 65536 (1-5 znaków) <br>
+    Wiadomość po spotkaniu - nie wymagana wiadomość, która zostanie pokazana po rozpoczęciu walki. Jeśli pole będzie puste zwykła wiadomość spotkania zostanie wykorzystana. Można tu korzystać z <a href="https://kolpa01.github.io/sussypage/morex/text-formating">formatowania tekstu</a>. (1-128 znaków)</p>
+    <h3>/custommobs view</h3>
+    <p>Pozwala wyświetlić wszystkich wrogów danego użytkownika i z nimi zawalczyć.</p>
+    <h2>Zaktualizowano komendy</h2>
+    <h3>/hunt</h3>
+    <p>Od teraz można wybierać lokalizacje podczas polowania. Obecnie są dostępne dwie:</p>
+    <p><b>Dolina Slime'ów</b> (domyślna)<br>
+    50% - Zielony Slime<br>
+    25% - Niebieski Slime<br>
+    15% - Różowy Slime<br>
+    9,9% - Złoty Slime<br>
+    0,1% - Morex</p>
+    <p><b>Arena Treningowa</b> (zdobywana po ukończeniu zadania <i>Pierwsze spotkanie</i>)<br>
+    Jeśli użytkownik nie ukończył samouczka walki zostanie on uruchomiony. Przedstawi on podstawy systemu walki tj. atak, tarczę.</p>
+    <h3>/set_default search</h3>
+    <p>Zmieniono nazwę komendy na <i>/set default search</i></p>
+    <h3>/profile</h3>
+    <p>Profil Walki w Sakwie przy braku przedmiotu wyświetla <b>Brak</b> zamiast <b>0 Brak</b></p>
+    <p>Pole <b>Stworzeni Wrogowie</b> w menu wyboru zostało uzupełnione. Teraz wyświetla ilość wrogów jakie użytkownik stworzył w stosunku do limitu.</p>
+    <h3>/fight</h3>
+    <p>Lekko zmieniono informacje w trakcie walki.</p>
+    <h3>/equipment view</h3>
+    <p>Komenda od teraz wyświetla również zawartość sakwy</p>
+    <h2>Inne Zmiany</h2>
+    <h3>Nagrody z przeciwników</h3>
+    <p><b>Morex</b><br>
+    🔺Róg Morex 1 -> 1-2</p>
+    <p><b>Żelazny Skorpion</b> <br>
+    ➕ 50% Żelazo 1-2</p>
+    <p><b>Złoty Skorpion</b> <br>
+    ➕ 50% Złoto 1-2</p>
+    <h3>Nagrody za poziomy</h3>
+    <p>Dodano nowe nagrody za zdobycie konkretnych poziomów.<br>
+    5 LV - zwiększenie limitu Własnych wrogów do 5<br>
+    10 LV - zwiększenie limitu Własnych wrogów do 10<br>
+    20 LV - zwiększenie limitu Własnych wrogów do 20<br>
+    50 LV - zwiększenie limitu Własnych wrogów do 50<br></p>
+    <h3>UI</h3>
+    <p>Zmieniono guziki reprezentujące 7, 8, 9 oraz wszystkie guziki od zmiany stron.</p>
+    <h3>Ustawienia</h3>
+    <p>Ustawienie <b>Multiplayer</b> wpływa na komendę <i>/customobs view</i></p>
+    <p>Ustawienie <b>Informacje Deweloperskie</b> wpływa na komendy <i>/custommobs view</i>, <i>/profile</i></p>
+    <h2>Naprawione błędy</h2>
+    <h3>/leaderboard</h3>
+    <p>Naprawiono błąd związany z przestawaniem działania komendy po użyciu komendy z guzikami.</p>
+    <h3>Ekwipunek</h3>
+    <p>Naprawiono błąd związany z dodawaniem się pustej sakwy do ekwipunku gracza przy tworzeniu konta.</p>
+    <h3>/profile</h3>
+    <p>Naprawiono błąd zwiazny z wyświetlaniem się menu wyboru z <i>/settings</i>.</p>
+    <h3>/search</h3>
+    <p>Naprawiono błąd związany z niewyświetlaniem się skrzyń po ukonczeniu walki w strukturze.</p>
+    <h3>System Walki</h3>
+    <p>Naprawiono błąd związany z wyświetlaniem się "Wróg stracił 0 HP", po zadaniu 0 obrażeń podczas walki zamiast "To nie przyniosło skutków".</p>
+    </div>
+  </div>
+</body>
+</html>
