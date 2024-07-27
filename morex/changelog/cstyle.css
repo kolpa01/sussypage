@@ -116,6 +116,30 @@ ul.topnav li.right {
   color: #ff38a9;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  font-size: 250px;
+  width: 100%;
+  color: white;
+  height: 300px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  bottom: 0;
+}
+
+#chabox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #621887;
+  margin: 5px;
+  width: 18vw;
+  height: 10vw;
+  border-radius: 10px;
+  padding: 0;
+}
 
 @media screen and (max-width: 672px) {
   ul.topnav li.right,
@@ -128,15 +152,61 @@ ul.topnav li.right {
   .tsxt {
     width: 90vw;
   }
+  #chabox {
+    width: 25vw;
+    height: 13vw;
+  }
+  #chabox a {
+      font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   .tsxt {
     width: 90vw;
   }
+  #chabox {
+    width: 25vw;
+    height: 13vw;
+  }
+  #chabox a {
+    font-size: 22px;
+  }
+    
 }
 
 .cialo {
   display: flex;
+  justify-content: center;
+}
+
+#tst {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+#chabox a:hover:not(.disabled) {
+  background-color: #ff38a9;
+  border-radius: 10px;
+}
+
+#chabox a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  
+  width:100%;
+  height:100%;
+  font-size: 32px;
+}
+
+#tst {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
