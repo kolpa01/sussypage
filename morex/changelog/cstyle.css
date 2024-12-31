@@ -210,3 +210,17 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+code {
+  display: flex;
+  border: #29252f 10px solid;
+  border-radius: 5px;
+  background-color: #29252f;
+}
+
+.codeblock {
+  border: #ffffff 2px solid;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
